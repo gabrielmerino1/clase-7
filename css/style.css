@@ -1,0 +1,96 @@
+/* Importaciones */
+
+/* Normalize */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root{
+    /* Colores */
+    --color-primario: #f5f5f5;
+    --color-secundario: #333;
+    --color-terciario: #fff;
+    --color-cuarto: #0d49b8;
+
+    /* Tipografía */
+    --fuente-principal: 'Poppins', sans-serif;
+
+    /* Colores de texto */
+    --color-texto-primario: #333;
+    --color-texto-secundario: #fff;
+
+    /* Tamaños tipografía */
+    --tamanio-chico: 1.2rem;
+    --tamanio-mediano: 1.6rem;
+    --tamanio-grande: 2rem;
+}
+
+/* Global */
+a{
+    text-decoration: none;
+    color: var(--color-texto-primario);
+}
+
+/* Body */
+
+body{
+    background-color: var(--color-primario);
+    font-family: var(--fuente-principal);
+    color: var(--color-texto-primario);
+}
+
+/* Header */
+
+header{
+    display: flex;
+    flex-flow: column;
+}
+
+.cabecera{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar_menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 24px 0;
+    background-color: var(--color-secundario);
+}
+
+.navbar_menu li a{
+    color: var(--color-primario);
+}
+
+/* Main */
+
+/* Footer */
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: var(--tamanio-mediano);
+
+    background-color: var(--color-secundario);
+    color: var(--color-texto-secundario);
+    padding: 24px 0;
+}
+
+.redes i:hover{
+    color: var(--color-cuarto);
+    transition: 0.5s;
+    transform: translateY(-5px);
+    cursor: pointer;
+    text-shadow: var(--color-texto-secundario) 0px 0px 5px;
+}
+
+/* Media Queries */
