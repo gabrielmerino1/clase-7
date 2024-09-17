@@ -58,6 +58,10 @@ header{
     padding: 1rem 2rem;
 }
 
+ol li span{
+
+    
+}
 .navbar_menu{
     list-style: none;
     display: flex;
